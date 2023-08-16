@@ -7,20 +7,20 @@ access(all) contract SomeContract {
         // 4 Variables
         //
 
-        // Read scope is Areas 1, 2, 3, and 4
-        // Write scope is Areas 1, 2, 3, and 4
+        // Read scope is in Areas 1, 2, 3, and 4
+        // Write scope is in Areas 1, 2, 3, and 4
         pub(set) var a: String
 
-        // Read scope is Areas 1, 2, 3, and 4
-        // Write scope is Area 1 only
+        // Read scope is in  Areas 1, 2, 3, and 4
+        // Write scope is in Area 1 only
         pub var b: String
 
-        // Read scope is Areas 1,2, and 3
-        // Write scope is Area 1 only
+        // Read scope is in Areas 1, 2, and 3
+        // Write scope is in Area 1 only
         access(contract) var c: String
 
-        // Read scope is Area 1 only
-        // Write scope is Area 1 only
+        // Read scope is in  Area 1 only
+        // Write scope is in Area 1 only
         access(self) var d: String
 
         //
