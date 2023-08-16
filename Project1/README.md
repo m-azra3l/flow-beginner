@@ -6,14 +6,14 @@ This project consists of a contract, transaction, and script for managing studen
 
 - [Requirements](#requirements)
 - [Contract](#contract)
-  - [Student_Struct](#student struct)
-  - [Public_Functions](#public functions)
+  - [StudentStruct](#studentstruct)
+  - [PublicFunctions](#publicfunctions)
 - [Transaction](#transaction)
-  - [Transaction Parameters](#transaction parameters)
+  - [TransactionParameters](#transactionparameters)
 - [Script](#script)
-  - [Script_Parameters](#script parameters)
+  - [ScriptParameters](#scriptparameters)
 - [Usage](#usage)
-- [Author_and_Credit](#author and credit)
+- [Author](#author)
 - [License](#license)
 
 ## Requirements
@@ -25,11 +25,11 @@ This project consists of a contract, transaction, and script for managing studen
 
 The `StructContract` contract defines a `Student` struct and provides functions to add and retrieve student information. The contract is responsible for maintaining a dictionary of students.
 
-### Student Struct
+### StudentStruct
 
 The `Student` struct represents a student with an `id` and a `name`. The struct has a constructor that initializes these properties.
 
-### Public Functions
+### PublicFunctions
 
 - `addStudent(id: UInt64, name: String)`: Adds a new student to the dictionary of students.
 - `getStudent(id: UInt64): Student?`: Retrieves a student's information by their ID.
@@ -38,7 +38,7 @@ The `Student` struct represents a student with an `id` and a `name`. The struct 
 
 The `StructTransaction` transaction interacts with the `StructContract` contract to add a student. It imports the `StructContract` contract and executes the `addStudent` function.
 
-### Transaction Parameters
+### TransactionParameters
 
 - `id`: The ID of the student to add.
 - `name`: The name of the student to add.
@@ -47,7 +47,7 @@ The `StructTransaction` transaction interacts with the `StructContract` contract
 
 The `StructScript` script interacts with the `StructContract` contract to retrieve a student's information by their ID. It imports the `StructContract` contract and calls the `getStudent` function.
 
-### Script Parameters
+### ScriptParameters
 
 - `id`: The ID of the student to retrieve.
 
@@ -58,7 +58,7 @@ The `StructScript` script interacts with the `StructContract` contract to retrie
 3. Use the `StructTransaction` transaction to add a student by providing their ID and name.
 4. Use the `StructScript` script to retrieve a student's information by providing their ID.
 
-## Author and Credit
+## Author
 
 This project was created by [Michael](https://github.com/m-azra3l) and serves as a basic example of how to define contracts, transactions, and scripts using Cadence on the Flow blockchain.
 
